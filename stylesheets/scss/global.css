@@ -1,0 +1,394 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -ms-overflow-style: none !important; }
+
+* {
+  -webkit-font-smoothing: antialiased; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+ins {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: white; }
+
+p {
+  font-family: 'Arimo', sans-serif;
+  font-size: 1em;
+  line-height: 1.25em;
+  margin: 0 0 0.5em 0; }
+
+h1 {
+  font-size: 1.6em;
+  margin: 0 0 0.5em 0; }
+
+h2 {
+  font-size: 1.4em;
+  margin: 0 0 0.5em 0; }
+
+h3 {
+  font-size: 1.2em;
+  margin: 0 0 0.5em 0; }
+
+h4 {
+  font-size: 1.0em;
+  margin: 0 0 0.5em 0; }
+
+h5 {
+  font-size: 0.8em;
+  margin: 0 0 0.5em 0; }
+
+h6 {
+  font-size: 0.8em;
+  margin: 0 0 0.5em 0; }
+
+@keyframes pulsebounce {
+  0% {
+    opacity: 0.9;
+    background-size: 50%; }
+  50% {
+    opacity: 0.95;
+    background-size: 55%; }
+  100% {
+    opacity: 1.0;
+    background-size: 50%; } }
+html {
+  height: 100%; }
+
+body {
+  height: 100%; }
+
+#page {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #383838; }
+  #page #content-container {
+    width: auto;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: auto; }
+    #page #content-container header {
+      width: 100%;
+      height: 150px;
+      position: relative;
+      background: #42ad4a url(../../images/headers/dungeon/super-mystery-dungeon.jpg) no-repeat;
+      background-size: cover;
+      box-sizing: border-box; }
+      #page #content-container header:before {
+        width: 100%;
+        height: 10px;
+        content: '';
+        position: absolute;
+        top: 100%;
+        background: #507c36;
+        border-top: 1px solid #42ad4a;
+        border-bottom: 1px solid #42ad4a; }
+      #page #content-container header:after {
+        width: 100%;
+        height: 100%;
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: transparent url("../../images/layout/grille.png");
+        opacity: 0.5; }
+      #page #content-container header a:link {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: block;
+        z-index: 15; }
+        #page #content-container header a:link:hover + #logo:before {
+          -webkit-animation: pulsebounce 0.2s forwards;
+          -moz-animation: pulsebounce 0.2s forwards;
+          -ms-animation: pulsebounce 0.2s forwards;
+          -o-animation: pulsebounce 0.2s forwards;
+          animation: pulsebounce 0.2s forwards; }
+        #page #content-container header a:link:hover + #logo:after {
+          -webkit-transition: left 0.32s linear;
+          -moz-transition: left 0.32s linear;
+          -ms-transition: left 0.32s linear;
+          -o-transition: left 0.32s linear;
+          transition: left 0.32s linear;
+          left: 110%; }
+      #page #content-container header #logo {
+        width: 100%;
+        height: 100%; }
+        #page #content-container header #logo:before {
+          content: '';
+          position: absolute;
+          top: 10px;
+          right: 40px;
+          bottom: 10px;
+          left: 40px;
+          background: transparent url("../../images/layout/serebii.net-icon-spaced-caps.png") no-repeat bottom center;
+          background-size: 50%;
+          opacity: 0.9; }
+      #page #content-container header #search {
+        width: 250px;
+        height: 50px;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: #cebc77; }
+    #page #content-container #content {
+      position: relative;
+      width: 80%;
+      max-width: 1000px;
+      margin: 10px auto auto auto; }
+
+#navigation {
+  width: 150px;
+  height: 100%;
+  float: left;
+  padding: 0 2px 0 0;
+  background-color: #507c36;
+  border-right: 1px solid #42ad4a;
+  z-index: 16; }
+  #navigation > ul {
+    width: 100%;
+    height: 100%; }
+    #navigation > ul > li {
+      width: 100%;
+      height: 40px;
+      position: relative;
+      list-style: none;
+      border-right: 1px solid #365224;
+      border-bottom: 1px solid #365224;
+      border-left: 1px solid #42ad4a; }
+      #navigation > ul > li:not(:first-child) {
+        border-top: 1px solid #42ad4a; }
+      #navigation > ul > li.submenu:hover:before {
+        width: 2px;
+        height: 100%;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 100%;
+        background: #497131;
+        border-bottom: 1px solid #365224; }
+      #navigation > ul > li:hover {
+        -webkit-transition: background 0.2s ease;
+        -moz-transition: background 0.2s ease;
+        -ms-transition: background 0.2s ease;
+        -o-transition: background 0.2s ease;
+        transition: background 0.2s ease;
+        background: #497131 no-repeat 10px center;
+        background-size: 20px auto; }
+        #navigation > ul > li:hover > ul {
+          visibility: visible;
+          opacity: 1.0; }
+      #navigation > ul > li > a:link, #navigation > ul > li a:active, #navigation > ul > li a:visited {
+        color: black; }
+      #navigation > ul > li > a:link {
+        width: 100%;
+        height: 100%;
+        display: block;
+        box-sizing: border-box;
+        padding: 0 0 0 40px;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); }
+        #navigation > ul > li > a:link:before {
+          width: 20px;
+          height: 20px;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 10px;
+          background: transparent no-repeat center center;
+          background-size: contain; }
+        #navigation > ul > li > a:link > span {
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+          position: absolute;
+          top: 50%; }
+      #navigation > ul > li > ul {
+        width: 450px;
+        height: auto;
+        -webkit-transition: visibility 0s linear, opacity 0.125s ease;
+        -moz-transition: visibility 0s linear, opacity 0.125s ease;
+        -ms-transition: visibility 0s linear, opacity 0.125s ease;
+        -o-transition: visibility 0s linear, opacity 0.125s ease;
+        transition: visibility 0s linear, opacity 0.125s ease;
+        -webkit-box-shadow: 15px 0 20px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 15px 0 20px rgba(0, 0, 0, 0.2);
+        -ms-box-shadow: 15px 0 20px rgba(0, 0, 0, 0.2);
+        -o-box-shadow: 15px 0 20px rgba(0, 0, 0, 0.2);
+        box-shadow: 15px 0 20px rgba(0, 0, 0, 0.2);
+        -webkit-border-radius: 0 6px 6px 6px;
+        -moz-border-radius: 0 6px 6px 6px;
+        -ms-border-radius: 0 6px 6px 6px;
+        -o-border-radius: 0 6px 6px 6px;
+        border-radius: 0 6px 6px 6px;
+        visibility: hidden;
+        opacity: 0.0;
+        margin: -1px 0 0 2px;
+        padding: 6px;
+        border-bottom: 1px solid #42ad4a;
+        border-right: 1px solid #42ad4a;
+        border-top: 1px solid #42ad4a;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        background: #497131;
+        z-index: 16;
+        overflow: auto; }
+        #navigation > ul > li > ul:before {
+          -webkit-border-radius: 0 4px 4px 4px;
+          -moz-border-radius: 0 4px 4px 4px;
+          -ms-border-radius: 0 4px 4px 4px;
+          -o-border-radius: 0 4px 4px 4px;
+          border-radius: 0 4px 4px 4px;
+          -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+          -moz-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+          -ms-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+          -o-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+          content: '';
+          position: absolute;
+          top: 6px;
+          right: 6px;
+          bottom: 6px;
+          left: 6px;
+          background: #454545;
+          z-index: -1; }
+        #navigation > ul > li > ul > li {
+          width: 150px;
+          height: auto;
+          float: left;
+          padding: 10px;
+          box-sizing: border-box; }
+          #navigation > ul > li > ul > li:nth-child(3n+1) {
+            clear: left; }
+          #navigation > ul > li > ul > li > span {
+            width: 100%;
+            height: auto;
+            display: block;
+            padding: 0 0 8px 0;
+            font-family: 'Oswald', sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            text-transform: uppercase;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+            border-bottom: 1px solid #c8c8c8; }
+          #navigation > ul > li > ul > li > ul {
+            width: 100%;
+            height: auto; }
+            #navigation > ul > li > ul > li > ul > li {
+              padding: 4px;
+              font-family: 'Cabin Condensed', sans-serif;
+              font-size: 12px;
+              text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+              line-height: 18px;
+              border-bottom: 1px solid #505050; }
+              #navigation > ul > li > ul > li > ul > li > a:link, #navigation > ul > li > ul > li > ul > li a:active, #navigation > ul > li > ul > li > ul > li a:visited {
+                text-decoration: none;
+                color: white; }
+              #navigation > ul > li > ul > li > ul > li > a:hover {
+                color: #cebc77; }
+              #navigation > ul > li > ul > li > ul > li.more {
+                text-align: right; }
+
+#navigation > ul > li:nth-child(1) > a:link:before {
+  background-image: url("../../images/graphics/glyphs-own/glyph-1-celebi.png"); }
+#navigation > ul > li:nth-child(2) > a:link:before {
+  background-image: url("../../images/graphics/glyphs/glyphicons-594-voice.png"); }
+#navigation > ul > li:nth-child(3) > a:link:before {
+  background-image: url("../../images/graphics/glyphs/glyphicons-547-quote.png"); }
+#navigation > ul > li:nth-child(4) > a:link:before {
+  background-image: url("../../images/graphics/glyphs-own/glyph-2-pokedex.png"); }
+#navigation > ul > li:nth-child(5) > a:link:before {
+  background-image: url("../../images/graphics/glyphs/glyphicons-322-gamepad.png"); }
+#navigation > ul > li:nth-child(6) > a:link:before {
+  background-image: url("../../images/graphics/glyphs-own/glyph-3-anime.png"); }
+#navigation > ul > li:nth-child(7) > a:link:before {
+  background-image: url("../../images/graphics/glyphs/glyphicons-9-film.png"); }
+#navigation > ul > li:nth-child(8) > a:link:before {
+  background-image: url("../../images/graphics/glyphs-own/glyph-4-manga.png"); }
+#navigation > ul > li:nth-child(9) > a:link:before {
+  background-image: url("../../images/graphics/glyphs/glyphicons-328-sampler.png"); }
+#navigation > ul > li:nth-child(10) > a:link:before {
+  background-image: url("../../images/graphics/glyphs/glyphicons-46-calendar.png"); }
+#navigation > ul > li:nth-child(11) > a:link:before {
+  background-image: url("../../images/graphics/glyphs-own/glyph-5-events.png"); }
+#navigation > ul > li:nth-child(12) > a:link:before {
+  background-image: url("../../images/graphics/glyphs/glyphicons-519-option-horizontal.png"); }
+
+@keyframes pulsebounce {
+  0% {
+    opacity: 0.9;
+    background-size: 50%; }
+  50% {
+    opacity: 0.95;
+    background-size: 55%; }
+  100% {
+    opacity: 1.0;
+    background-size: 50%; } }
+#page {
+  opacity: 0.0;
+  transition: opacity 1s ease-out; }
+
+@keyframes pulsebounce {
+  0% {
+    opacity: 0.9;
+    background-size: 50%; }
+  50% {
+    opacity: 0.95;
+    background-size: 55%; }
+  100% {
+    opacity: 1.0;
+    background-size: 50%; } }
+
+/*# sourceMappingURL=global.css.map */
