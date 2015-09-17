@@ -14,6 +14,7 @@
 
 		<!-- Fonts -->
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,700' rel='stylesheet' type='text/css'>
@@ -49,7 +50,27 @@
 			</header>
 
 			<div id="content">
-				<p>Content</p>
+
+				<article>
+					<header>
+						<h1><a href="">This is an example article header - These have a tendency to become quite long, so we'll have to work around that! Also if they happen to be so long, that they wrap onto the next line.</a></h1>
+						<p>09-11-2014 07:11 GMT / 02:11 EST by <a href="">Serebii</a></p>
+					</header>
+					<section>
+
+					</section>
+				</article>
+
+				<article>
+					<header>
+						<h1><a href="">This article title isn't very long </a></h1>
+						<p>09-11-2014 07:11 GMT / 02:11 EST by <a href="">Serebii</a></p>
+					</header>
+					<section>
+
+					</section>
+				</article>
+
 			</div>
 		</div>
 

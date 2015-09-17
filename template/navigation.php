@@ -51,7 +51,7 @@
 						<li><a href="">Competitive Play</a></li>
 						<li><a href="">Spin-Off &amp; other games</a></li>
 						<li><a href="">Trading Card Games</a></li>
-						<li><a href="">Pok�mon Role Playing</a></li>
+						<li><a href="">Pokémon Role Playing</a></li>
 						<li><a href="">Fan Work &amp; Interactive</a></li>
 						<li><a href="">Consoles &amp; Computers</a></li>
 					</ul>
@@ -99,7 +99,7 @@
 				<li><span>Specific Mechanics</span>
 					<ul>
 						<li><a href="">List of specific In-Depth Attack Details</a></li>
-						<li><a href="">List of specific Pok�mon pages</a></li>
+						<li><a href="">List of specific Pokémon pages</a></li>
 						<li><a href="">Miscellanous Aspects</a></li>
 					</ul>
 				</li>
@@ -116,37 +116,8 @@
 				</li>
 			</ul>
 		</li>
-		<li><a href=""><span>Games</span></a>
-			<ul>
-				<li><span>General</span>
-					<ul>
-						<li><a href="">Forum</a></li>
-						<li><a href="">What's New?</a></li>
-						<li><a href="">Announcements</a></li>
-						<li><a href="">FAQ</a></li>
-						<li><a href="">Rules</a></li>
-						<li><a href="">Awards</a></li>
-						<li><a href="">Staff Contact</a></li>
-					</ul>
-				</li>
-				<li><span>Shortcuts</span>
-					<ul>
-						<li><a href="">General Discussion</a></li>
-						<li><a href="">Anime &amp; Manga</a></li>
-						<li><a href="">Generation 6 Games</a></li>
-						<li><a href="">Generation 1 - 5 Games</a></li>
-						<li><a href="">Competitive Play</a></li>
-						<li><a href="">Spin-Off &amp; other games</a></li>
-						<li><a href="">Trading Card Games</a></li>
-						<li><a href="">Pok�mon Role Playing</a></li>
-						<li><a href="">Fan Work &amp; Interactive</a></li>
-						<li><a href="">Consoles &amp; Computers</a></li>
-					</ul>
-				</li>
-			</ul>
-		</li>
-		<li><a href=""><span>Anime</span></a>
-		</li>
+		<li><a href=""><span>Games</span></a></li>
+		<li><a href=""><span>Anime</span></a></li>
 		<li><a href=""><span>Movies</span></a></li>
 		<li><a href=""><span>Manga</span></a></li>
 		<li><a href=""><span>TCG</span></a></li>

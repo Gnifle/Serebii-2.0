@@ -111,14 +111,14 @@ body {
     height: 100%;
     overflow-y: auto;
     overflow-x: auto; }
-    #page #content-container header {
+    #page #content-container > header {
       width: 100%;
       height: 150px;
       position: relative;
       background: #42ad4a url(../../images/headers/dungeon/super-mystery-dungeon.jpg) no-repeat;
       background-size: cover;
       box-sizing: border-box; }
-      #page #content-container header:before {
+      #page #content-container > header:before {
         width: 100%;
         height: 10px;
         content: '';
@@ -127,7 +127,7 @@ body {
         background: #507c36;
         border-top: 1px solid #42ad4a;
         border-bottom: 1px solid #42ad4a; }
-      #page #content-container header:after {
+      #page #content-container > header:after {
         width: 100%;
         height: 100%;
         content: '';
@@ -138,29 +138,29 @@ body {
         left: 0;
         background: transparent url("../../images/layout/grille.png");
         opacity: 0.5; }
-      #page #content-container header a:link {
+      #page #content-container > header a:link {
         width: 100%;
         height: 100%;
         position: absolute;
         display: block;
         z-index: 15; }
-        #page #content-container header a:link:hover + #logo:before {
+        #page #content-container > header a:link:hover + #logo:before {
           -webkit-animation: pulsebounce 0.2s forwards;
           -moz-animation: pulsebounce 0.2s forwards;
           -ms-animation: pulsebounce 0.2s forwards;
           -o-animation: pulsebounce 0.2s forwards;
           animation: pulsebounce 0.2s forwards; }
-        #page #content-container header a:link:hover + #logo:after {
+        #page #content-container > header a:link:hover + #logo:after {
           -webkit-transition: left 0.32s linear;
           -moz-transition: left 0.32s linear;
           -ms-transition: left 0.32s linear;
           -o-transition: left 0.32s linear;
           transition: left 0.32s linear;
           left: 110%; }
-      #page #content-container header #logo {
+      #page #content-container > header #logo {
         width: 100%;
         height: 100%; }
-        #page #content-container header #logo:before {
+        #page #content-container > header #logo:before {
           content: '';
           position: absolute;
           top: 10px;
@@ -170,13 +170,14 @@ body {
           background: transparent url("../../images/layout/serebii.net-icon-spaced-caps.png") no-repeat bottom center;
           background-size: 50%;
           opacity: 0.9; }
-      #page #content-container header #search {
+      #page #content-container > header #search {
         width: 250px;
         height: 50px;
         position: absolute;
         top: 100%;
         right: 0;
-        background: #cebc77; }
+        background: #cebc77;
+        display: none; }
     #page #content-container #content {
       position: relative;
       width: 80%;
@@ -365,6 +366,22 @@ body {
   background-image: url("../../images/graphics/glyphs-own/glyph-5-events.png"); }
 #navigation > ul > li:nth-child(12) > a:link:before {
   background-image: url("../../images/graphics/glyphs/glyphicons-519-option-horizontal.png"); }
+
+#content {
+  padding: 20px 0 0 0; }
+  #content article header {
+    color: whitesmoke; }
+    #content article header h1 {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 1.2em; }
+      #content article header h1 > a:link, #content article header h1 a:active, #content article header h1 a:visited {
+        color: whitesmoke;
+        text-decoration: none; }
+    #content article header p {
+      float: right;
+      font-family: 'Open Sans Condensed', sans-serif; }
 
 @keyframes pulsebounce {
   0% {
